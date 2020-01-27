@@ -177,4 +177,11 @@ wire:
     direction: str
   CHILD:
     - vector
+    - wireTypeDefs
+wireTypeDef:
+  MEMBERS:
+    typeName: str
+wireTypeDefs:
+  CHILDREN:
+    - wireTypeDef
 """
