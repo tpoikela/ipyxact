@@ -58,8 +58,10 @@ class IpxactInt(int):
             else:
                 raise ValueError("Could not convert expression to an integer: {}".format(args[0]))
             expr = expr[sep+2:]
-
-        return int(expr.replace('_', ''), base)
+        try:
+            return int(expr.replace('_', ''), base)
+        except Exception as e:
+            return expr.replace('_', '')
 
 class IpxactBool(str):
     def __new__(cls, *args, **kwargs):
