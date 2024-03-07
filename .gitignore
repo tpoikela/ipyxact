@@ -1,1 +1,4 @@
 *.pyc
+*.egg-info
+.venv
+examples/out

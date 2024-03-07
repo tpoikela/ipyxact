@@ -63,7 +63,10 @@ class IpxactInt(int):
         elif any(x in expr for x in ("B", "K")):
             expr = cls.convert_bytes(expr)
 
-        return int(expr.replace('_', ''), base)
+        try:
+            return int(expr.replace('_', ''), base)
+        except Exception as e:
+            return expr.replace('_', '')
 
     @staticmethod
     def convert_bytes(expr):

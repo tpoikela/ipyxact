@@ -246,4 +246,11 @@ wire:
     - constraintSets
     - vectors
     - drivers
+    - wireTypeDefs
+wireTypeDef:
+  MEMBERS:
+    typeName: str
+wireTypeDefs:
+  CHILDREN:
+    - wireTypeDef
 """

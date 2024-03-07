@@ -4,7 +4,13 @@ Register map
 Register Map
 ------------
 
-## 0x0 chip_id_reg
+# some_register_map
+## some_register_map
+This address map contains some example registers to show how RDL can be utilized in various situations.
+
+---
+
+### 0x0 chip_id_reg
 
 This register cotains the part # and revision # for XYZ ASIC
 
@@ -13,7 +19,9 @@ Bits | Access | Name | Description
 3:0|read-only|rev_num|This field represents the chips revision number
 31:4|read-only|part_num|This field represents the chips part number
 
-## 0x4 link_status
+---
+
+### 0x4 link_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -22,7 +30,9 @@ Bits | Access | Name | Description
 11:8|read-only|port2|Status of a Serdes Link
 15:12|read-only|port3|Status of a Serdes Link
 
-## 0x10 myRegInst
+---
+
+### 0x10 myRegInst
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -43,14 +53,18 @@ Bits | Access | Name | Description
 29:28|read-write|data14|My example 2bit status field
 31:30|read-write|data15|My example 2bit status field
 
-## 0x20 spi4_pkt_count
+---
+
+### 0x20 spi4_pkt_count
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 15:0|read-write|port1|Number of certain packet type seen
 31:16|read-write|port0|Number of certain packet type seen
 
-## 0x24 gige_pkt_count_reg
+---
+
+### 0x24 gige_pkt_count_reg
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -59,19 +73,25 @@ Bits | Access | Name | Description
 23:16|read-write|port1|Number of certain packet type seen
 31:24|read-write|port0|Number of certain packet type seen
 
-## 0x100 fifo_port_0_head
+---
+
+### 0x100 fifo_port_0_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x104 fifo_port_0_tail
+---
+
+### 0x104 fifo_port_0_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x108 fifo_port_0_status
+---
+
+### 0x108 fifo_port_0_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -80,19 +100,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x110 fifo_port_1_head
+---
+
+### 0x110 fifo_port_1_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x114 fifo_port_1_tail
+---
+
+### 0x114 fifo_port_1_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x118 fifo_port_1_status
+---
+
+### 0x118 fifo_port_1_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -101,19 +127,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x120 fifo_port_2_head
+---
+
+### 0x120 fifo_port_2_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x124 fifo_port_2_tail
+---
+
+### 0x124 fifo_port_2_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x128 fifo_port_2_status
+---
+
+### 0x128 fifo_port_2_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -122,19 +154,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x130 fifo_port_3_head
+---
+
+### 0x130 fifo_port_3_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x134 fifo_port_3_tail
+---
+
+### 0x134 fifo_port_3_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x138 fifo_port_3_status
+---
+
+### 0x138 fifo_port_3_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -143,19 +181,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x140 fifo_port_4_head
+---
+
+### 0x140 fifo_port_4_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x144 fifo_port_4_tail
+---
+
+### 0x144 fifo_port_4_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x148 fifo_port_4_status
+---
+
+### 0x148 fifo_port_4_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -164,19 +208,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x150 fifo_port_5_head
+---
+
+### 0x150 fifo_port_5_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x154 fifo_port_5_tail
+---
+
+### 0x154 fifo_port_5_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x158 fifo_port_5_status
+---
+
+### 0x158 fifo_port_5_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -185,19 +235,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x160 fifo_port_6_head
+---
+
+### 0x160 fifo_port_6_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x164 fifo_port_6_tail
+---
+
+### 0x164 fifo_port_6_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x168 fifo_port_6_status
+---
+
+### 0x168 fifo_port_6_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -206,19 +262,25 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x170 fifo_port_7_head
+---
+
+### 0x170 fifo_port_7_head
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x174 fifo_port_7_tail
+---
+
+### 0x174 fifo_port_7_tail
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 31:0|read-write|data|
 
-## 0x178 fifo_port_7_status
+---
+
+### 0x178 fifo_port_7_status
 
 Bits | Access | Name | Description
 -----|--------|------|------------
@@ -227,77 +289,99 @@ Bits | Access | Name | Description
 4|read-write|almost_empty|
 5|read-write|almost_full|
 
-## 0x1000 vc_pkt_count_0
+---
+
+### 0x1000 vc_pkt_count_0
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1010 vc_pkt_count_1
+---
+
+### 0x1010 vc_pkt_count_1
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1020 vc_pkt_count_2
+---
+
+### 0x1020 vc_pkt_count_2
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1030 vc_pkt_count_3
+---
+
+### 0x1030 vc_pkt_count_3
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1040 vc_pkt_count_4
+---
+
+### 0x1040 vc_pkt_count_4
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1050 vc_pkt_count_5
+---
+
+### 0x1050 vc_pkt_count_5
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1060 vc_pkt_count_6
+---
+
+### 0x1060 vc_pkt_count_6
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1070 vc_pkt_count_7
+---
+
+### 0x1070 vc_pkt_count_7
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1080 vc_pkt_count_8
+---
+
+### 0x1080 vc_pkt_count_8
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x1090 vc_pkt_count_9
+---
+
+### 0x1090 vc_pkt_count_9
 
 Bits | Access | Name | Description
 -----|--------|------|------------
 30:0|read-write|vc_count|Number of certain packet type seen
 31|read-write|active|VC is Active
 
-## 0x10a0 vc_pkt_count_10
+---
+
+### 0x10a0 vc_pkt_count_10
 
 Helpful description
 
